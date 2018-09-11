@@ -1,0 +1,126 @@
+/* 尾部 */
+.footer_index {
+    overflow: hidden;
+    background-color: #333333;
+    height: 342px;
+    margin-top: 10px;
+  }
+  .footer_index .footer_content {
+    width: 1200px;
+    margin: 60px auto 60px auto;
+  }
+  .footer_index .footer_content::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+  .footer_content_left_btn {
+    margin-top: 10px;
+  }
+  .footer_content_left_btn::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+  .footer_content .footer_content_left {
+    float: left;
+    width: 222px;
+  }
+  .footer_content .footer_content_left a {
+    width: 107px;
+    height: 35px;
+    background-color: #e61b52;
+    font-size: 13px;
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
+    float: left;
+  }
+  .footer_content .footer_content_left button {
+    width: 107px;
+    height: 35px;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    line-height: 35px;
+    margin-left: 8px;
+    background-color: #ff6d1d;
+    font-size: 13px;
+    display: block;
+    color: #fff;
+    text-align: center;
+  }
+  .footer_content .footer_content_left h3 {
+    font-size: 15px;
+    color: #e9e9e9;
+    margin-bottom: 15px;
+  }
+  .footer_content_left_inp {
+    width: 100%;
+    height: 34px;
+    margin-top: 10px;
+    text-align: right;
+    cursor: text;
+    background-color: #fff;
+  }
+  .footer_content_left_inp input {
+    height: 100%;
+    background: 0;
+    border: none;
+    font-size: 13px;
+    color: #b5b5b5;
+    outline: none;
+  }
+  .footer_content_left_inp i {
+    font-size: 24px;
+    display: block;
+    color: #b0b0b0;
+    float: right;
+    margin: 5px 8px 0 0;
+  }
+  .footer_content_left_inp::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+  .footer_content_middle {
+    color: #e9e9e9;
+    float: left;
+    margin-left: 70px;
+  }
+  .footer_content_middle ol li {
+    padding-left: 5px;
+    line-height: 25px;
+  }
+  .footer_content_middle i {
+    color: #b0b0b0;
+    font-size: 18px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  .footer_content_middle h3 {
+    font-size: 15px;
+    color: #e9e9e9;
+    margin-bottom: 10px;
+  }
+  .footer_content_right {
+    text-align: center;
+    float: right;
+  }
+  .footer_content_right p {
+    font-size: 12px;
+    color: #e9e9e9;
+    margin-top: 5px;
+  }
+  .footer_content_right img {
+    width: 150px;
+    height: 150px;
+  }
+  .footer_copy {
+    width: 1200px;
+    margin: 0 auto;
+    color: #e9e9e9;
+  }

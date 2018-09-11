@@ -1,0 +1,8 @@
+<div class="hqhj_name">
+  <div class="hqhj_img" style="margin: 16px;">
+    <a target="_blank" href="[field:arcurl /]" title="[field:fulltitle/]">
+    [field:image/]
+    </a>
+    <div class="hqhj_desc"><a href="[field:arcurl /]">[field:title /]</a></div>
+  </div>
+</div>

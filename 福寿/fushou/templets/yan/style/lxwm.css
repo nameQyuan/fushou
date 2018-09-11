@@ -1,0 +1,167 @@
+.content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.zyz_content::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.zyz_left {
+  width: 20%;
+  float: left;
+}
+.zyz_left h1 {
+  width: 100%;
+  display: block;
+  background-color: #b02f33;
+  color: #fff;
+  padding-left: 14px;
+  height: 30px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.zyz_left span {
+  width: 100%;
+  margin-top: 5px;
+  display: block;
+  cursor: pointer;
+  height: 30px;
+  border-bottom: 1px solid #e6e6e6;
+  border-left: 4px solid transparent;
+  padding-left: 10px;
+  line-height: 30px;
+}
+.zyz_left .zyz_left_hov {
+  border-left-color: #b02f33;
+  color: #b02f33;
+}
+.zyz_right {
+  position: relative;
+  width: 72%;
+  height: 700px;
+  float: right;
+}
+.zyz_right_list {
+  display: none;
+  width: 100%;
+  position: absolute;
+}
+.zyz_right_list .zyz_right_top {
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+  height: 30px;
+  line-height: 30px;
+}
+.zyz_right_list .zyz_right_top h1 {
+  display: block;
+  float: left;
+  color: #b02f33;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 0 10px;
+  border-bottom: 1.5px solid #b02f33;
+}
+.zyz_right_list .zyz_right_top p {
+  display: block;
+  float: right;
+  color: #585858;
+}
+.zyz_right_list .zyz_right_top p a {
+  color: #585858;
+}
+.zyz_right_list:nth-child(2) {
+  display: block;
+}
+/* 只用加入这个css */
+.lxwm_content {
+  margin: 30px 0;
+  font-family: 微软雅黑;
+}
+.lxwm_content .lxwm_textar {
+  height: auto;
+}
+.lxwm_content p {
+  width: 100%;
+  height: 30px;
+  display: block;
+  margin: 10px 0;
+}
+.lxwm_content p label {
+  width: 8%;
+  display: block;
+  text-align: right;
+  float: left;
+  color: #54545e;
+  padding-right: 10px;
+}
+.lxwm_content p input {
+  width: 200px;
+  display: block;
+  float: left;
+  outline: none;
+  border-radius: 2px;
+  background: 0;
+  font-family: 微软雅黑;
+  color: #b5b5b5;
+  border: 1px solid #999;
+  height: 25px;
+  padding-left: 1px;
+  margin-right: 5px;
+}
+.lxwm_content p input::-webkit-input-placeholder {
+  color: #b5b5b5;
+}
+.lxwm_content p input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #b5b5b5;
+}
+.lxwm_content p input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #b5b5b5;
+}
+.lxwm_content p input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #b5b5b5;
+}
+.lxwm_content p textarea {
+  display: block;
+  height: 100px;
+  width: 340px;
+  margin-bottom: 10px;
+  color: #b5b5b5;
+  padding-top: 5px;
+  font-family: 微软雅黑;
+  padding-left: 1px;
+}
+.lxwm_content p textarea::-webkit-input-placeholder {
+  color: #b5b5b5;
+}
+.lxwm_content p textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #b5b5b5;
+}
+.lxwm_content p textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #b5b5b5;
+}
+.lxwm_content p textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #b5b5b5;
+}
+.lxwm_content button {
+  width: 200px;
+  height: 35px;
+  font-size: 16px;
+  display: block;
+  line-height: 35px;
+  background-color: #b02f33;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 80px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

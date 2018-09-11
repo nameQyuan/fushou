@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>{dede:field name='typename'/}-{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/resetcommon.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/style/Style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/rest.css">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/footer.css">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/iconfont.css">
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/NSW_JCIA.js"></script>
+</head>
+<script type="text/javascript">
+if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/index.html";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}
+</script>
+<body>
+<!--头部开始-->
+{dede:include filename="head.htm"/}
+
+<script type="text/javascript">
+    muneCur2();
+    initCommonHeader();
+    var MARK = "product";
+    if (MARK == "") { MARK = "index"; } else if (MARK != "index") { muneCur2(); }
+</script>
+<!--头部结束-->
+<div class="content">
+<div class="topadcs">
+   <a href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+  <img src="{dede:global.cfg_templets_skin/}/images/002.jpg" title="{dede:field name='typename'/}" alt="{dede:field name='typename'/}" width="100%" />
+  </a>
+</div>
+</div>
+
+<!--栏目开始-->
+<div class="herd">
+<div class="herd_a">
+ <img src="{dede:global.cfg_templets_skin/}/images/rr.jpg"/>
+
+</div>
+
+
+<div class="herd_b">
+<div id="right_tops" class="right-tops">
+         <ul>
+            <li class="tab_css_hover">园区简介</li>
+            <li>部门简介</li>
+            <li>院长风采</li>
+            <li>长者风采</li>
+        </ul>
+</div>
+
+<div class="tab_css" id="tab1_content" style="display: block;">
+   {dede:sql sql='Select content from dede_arctype where id=107'}
+     [field:content function='cn_substr(html2text(@me),800)'/]...
+    {/dede:sql}
+    {dede:type typeid='107'}<a href="[field:typelink/]">
+   <button class="button button4" style="background-color: #e7e7e7; color: #666;font-size:12px  color: white;  padding: 15px 32px;  margin: 4px 2px;   display: inline-block;
+    border: none; text-decoration: none;  cursor: pointer; float: right;">查看更多</button>
+    </a> {/dede:type}
+  </div>
+
+
+
+
+<div class="tab_css" id="tab2_content">
+   {dede:sql sql='Select content from dede_arctype where id=108'}
+     [field:content function='cn_substr(html2text(@me),800)'/]...
+    {/dede:sql}
+    {dede:type typeid='108'}<a href="[field:typelink/]">
+   <button class="button button4" style="background-color: #e7e7e7; color: #666;font-size:12px  color: white;  padding: 15px 32px;  margin: 4px 2px;   display: inline-block;
+    border: none; text-decoration: none;  cursor: pointer; float: right;">查看更多</button>
+    </a> {/dede:type}
+</div>
+
+
+
+<div class="tab_css" id="tab3_content">
+   {dede:sql sql='Select content from dede_arctype where id=109'}
+     [field:content function='cn_substr(html2text(@me),800)'/]...
+    {/dede:sql}
+    {dede:type typeid='109'}<a href="[field:typelink/]">
+   <button class="button button4" style="background-color: #e7e7e7; color: #666;font-size:12px  color: white;  padding: 15px 32px;  margin: 4px 2px;   display: inline-block;
+    border: none; text-decoration: none;  cursor: pointer; float: right;">查看更多</button>
+    </a> {/dede:type}
+</div>
+
+
+
+<div class="tab_css" id="tab4_content">
+   {dede:sql sql='Select content from dede_arctype where id=110'}
+     [field:content function='cn_substr(html2text(@me),800)'/]...
+    {/dede:sql}
+    {dede:type typeid='110'}<a href="[field:typelink/]">
+   <button class="button button4" style="background-color: #e7e7e7; color: #666;font-size:12px  color: white;  padding: 15px 32px;  margin: 4px 2px;   display: inline-block;
+    border: none; text-decoration: none;  cursor: pointer; float: right;">查看更多</button>
+    </a> {/dede:type}
+
+</div>
+</div>
+</div>
+
+<!--栏目结束-->
+
+
+
+<div class="fontas">
+ <div class="zjyq_tab">
+        <p>
+          <!-- http://changde.58.com/ -->
+             <a href="http://changde.58.com/" style="text-decoration: none; color:#000; ">
+            <span>
+               <i class="iconfont">&#xE621;</i>加入我们
+             </span>
+           </a>
+            <span>
+                <i class="iconfont">&#xe660;</i>本院荣誉</span>
+            <span  class="zjyq_tab_hover">
+                <i class="iconfont">&#xe643;</i>环境展示</span>
+        </p>
+        <div class="zjyq_tab_content">
+
+            <div class="zjyq_tab_list">
+
+
+            </div>
+
+
+            <div class="zjyq_tab_list" style="margin-top: 10px;">
+             	 <div class="zjyq_ritea" style="width: 100%;">
+  <div class="hqhj_img_list">
+      {dede:arclist row="8" imgwidth="100" imgheight="100" type="image"  typeid='103'}
+<div class="hqhj_names">
+  <div class="hqhj_img">
+    <a target="_blank" href="[field:arcurl /]" title="[field:fulltitle/]">
+  [field:image/]
+    </a>
+    <div class="hqhj_desc"><a href="[field:arcurl /]">[field:title /]</a></div>
+  </div>
+</div>
+{/dede:arclist}
+  </div>
+</div>
+</div>
+
+             <div class="zjyq_tab_list">
+                <div class="zjyq_zi_content">
+                    <p class="zjyq_zi_tab">
+                        <span class="zjyq_zi_content_hov">周边环境</span>
+                        <span>园区环境</span>
+                        <span>娱乐设施</span>
+                        <span>餐饮环境</span>
+                    </p>
+                    <div class="zjyq_mimn_he">
+                        <div class="zjyq_mimn_he_list">
+                        <div class="zjyq_mimn_he_lista">
+                                <div class="zjyq_mimn_he_listaa">
+                                    <img src="{dede:global.cfg_templets_skin/}/images/1101.png" alt="" width="100%" />
+                                </div>
+                                <div class="zjyq_mimn_he_listab">
+                                    <img src="{dede:global.cfg_templets_skin/}/images/1100.png" alt=""  width="100%" />
+                                </div>
+                            </div>
+
+                            <div class="zjyq_mimn_he_listb">
+                             <div class="zjyq_mimn_he_listba">
+                                  <img src="{dede:global.cfg_templets_skin/}/images/1102.png" alt="" width="100%" />
+                                   </div>
+                                    <div class="zjyq_mimn_he_listbb">
+                                     <img src="{dede:global.cfg_templets_skin/}/images/1103.png" alt=""  width="100%" />
+                                   </div>
+
+                              </div>
+
+                         <div class="zjyq_mimn_he_listc">
+                             <div class="zjyq_mimn_he_listca">
+                                   <img src="{dede:global.cfg_templets_skin/}/images/1104.png" alt=""  width="100%" />
+                                   </div>
+                                    <div class="zjyq_mimn_he_listcb">
+                                       {dede:type typeid='90'}
+                                      <a href="[field:typelink/]">
+                                        <img src="/templets/yan/images/1105.png" alt="周边环境"   width="100%"  />
+                                      </a>
+                                        {/dede:type}
+
+                                   </div>
+                             </div>
+                        </div>
+
+
+
+                            <div class="zjyq_mimn_he_list">
+                            	 <div class="zjyq_mimn_he_lista">
+                                <div class="zjyq_mimn_he_listaa">
+                                    <img src="{dede:global.cfg_templets_skin/}/images/1200.png" alt="" width="100%" />
+                                </div>
+                                <div class="zjyq_mimn_he_listab">
+                                    <img src="{dede:global.cfg_templets_skin/}/images/1201.png" alt=""  width="100%" />
+                                </div>
+                            </div>
+
+                            <div class="zjyq_mimn_he_listb">
+                             <div class="zjyq_mimn_he_listba">
+                                  <img src="{dede:global.cfg_templets_skin/}/images/1202.png" alt="" width="100%" />
+                                   </div>
+                                    <div class="zjyq_mimn_he_listbb">
+                                     <img src="{dede:global.cfg_templets_skin/}/images/1203.png" alt=""  width="100%" />
+                                   </div>
+
+                              </div>
+
+                         <div class="zjyq_mimn_he_listc">
+                             <div class="zjyq_mimn_he_listca">
+                                   <img src="{dede:global.cfg_templets_skin/}/images/1204.png" alt=""  width="100%" />
+                                   </div>
+                                    <div class="zjyq_mimn_he_listcb">
+                                       {dede:type typeid='89'}
+                                      <a href="[field:typelink/]">
+                                        <img src="/templets/yan/images/1105.png" alt="园区环境"   width="100%"  />
+                                      </a>
+                                        {/dede:type}
+
+                                   </div>
+                             </div>
+
+                            </div>
+                            <div class="zjyq_mimn_he_list">
+ <div class="zjyq_mimn_he_lista">
+                                <div class="zjyq_mimn_he_listaa">
+                                    <img src="{dede:global.cfg_templets_skin/}/images/1205.png" alt="" width="100%" />
+                                </div>
+                                <div class="zjyq_mimn_he_listab">
+                                    <img src="{dede:global.cfg_templets_skin/}/images/1206.png" alt=""  width="100%" />
+                                </div>
+                            </div>
+
+                            <div class="zjyq_mimn_he_listb">
+                             <div class="zjyq_mimn_he_listba">
+                                  <img src="{dede:global.cfg_templets_skin/}/images/1207.png" alt="" width="100%" />
+                                   </div>
+                                    <div class="zjyq_mimn_he_listbb">
+                                     <img src="{dede:global.cfg_templets_skin/}/images/1208.png" alt=""  width="100%" />
+                                   </div>
+
+                              </div>
+
+                         <div class="zjyq_mimn_he_listc">
+                             <div class="zjyq_mimn_he_listca">
+                                   <img src="{dede:global.cfg_templets_skin/}/images/1209.png" alt=""  width="100%" />
+                                   </div>
+                                    <div class="zjyq_mimn_he_listcb">
+                                       {dede:type typeid='91'}
+                                      <a href="[field:typelink/]">
+                                        <img src="/templets/yan/images/1105.png" alt="娱乐设施"   width="100%"  />
+                                      </a>
+                                        {/dede:type}
+
+                                   </div>
+                             </div>
+                            </div>
+                            <div class="zjyq_mimn_he_list">
+
+                            	 <div class="zjyq_mimn_he_lista">
+                                <div class="zjyq_mimn_he_listaa">
+                                    <img src="{dede:global.cfg_templets_skin/}/images/1301.png" alt="" width="100%" />
+                                </div>
+                                <div class="zjyq_mimn_he_listab">
+                                    <img src="{dede:global.cfg_templets_skin/}/images/1302.png" alt=""  width="100%" />
+                                </div>
+                            </div>
+
+                            <div class="zjyq_mimn_he_listb">
+                             <div class="zjyq_mimn_he_listba">
+                                  <img src="{dede:global.cfg_templets_skin/}/images/1303.png" alt="" width="100%" />
+                                   </div>
+                                    <div class="zjyq_mimn_he_listbb">
+                                     <img src="{dede:global.cfg_templets_skin/}/images/1304.png" alt=""  width="100%" />
+                                   </div>
+
+                              </div>
+
+                         <div class="zjyq_mimn_he_listc">
+                             <div class="zjyq_mimn_he_listca">
+                                   <img src="{dede:global.cfg_templets_skin/}/images/1305.png" alt=""  width="100%" />
+                                   </div>
+                                    <div class="zjyq_mimn_he_listcb">
+                                       {dede:type typeid='92'}
+                                      <a href="[field:typelink/]">
+                                        <img src="/templets/yan/images/1105.png" alt="餐饮环境"   width="100%"  />
+                                      </a>
+                                        {/dede:type}
+
+                                   </div>
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        $(function () {
+            $('.zjyq_tab>p span').on('click', function () {
+                var indexTan = $(this).index();
+                $(this).addClass('zjyq_tab_hover').siblings('span').removeClass('zjyq_tab_hover');
+                $('.zjyq_tab_content .zjyq_tab_list').eq(indexTan).show().siblings('.zjyq_tab_list').hide();
+            })
+            $('.zjyq_zi_tab span').on('click', function () {
+                var indexTan = $(this).index();
+                $(this).addClass('zjyq_zi_content_hov').siblings('span').removeClass('zjyq_zi_content_hov');
+                $('.zjyq_mimn_he .zjyq_mimn_he_list').eq(indexTan).show().siblings('.zjyq_mimn_he_list').hide();
+            })
+            $('#right_tops ul li').on('click',function(){
+                var indexTan = $(this).index();
+                $(this).addClass('tab_css_hover').siblings('li').removeClass('tab_css_hover');
+                $('.tab_css').eq(indexTan).show().siblings('.tab_css').hide();
+            })
+        })
+    </script>
+
+
+
+
+</div>
+</div>
+
+
+{dede:include filename="footer.htm"/}
+</body>
+</html>

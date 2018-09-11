@@ -1,0 +1,109 @@
+<!DOCTYPE>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field name='typename'/}-{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/resetcommon.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/style/Style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/rest.css">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/footer.css">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/iconfont.css">
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/NSW_JCIA.js"></script>
+
+</head>
+<body style="font-family:"微软雅黑";">
+
+<!--新闻动态栏目 -->
+
+
+<!--头部开始-->
+{dede:include filename="head.htm"/}
+<!--头部结束-->
+
+<script type="text/javascript">
+
+    muneCur2();
+
+    initCommonHeader();
+
+    var MARK = "product";
+
+    if (MARK == "") { MARK = "index"; } else if (MARK != "index") { muneCur2(); }
+
+</script>
+
+<!--导图开始-->
+<div class="content">
+<div class="topadcs">
+<a href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+<img src="{dede:global.cfg_templets_skin/}/images/002.png" title="{dede:field name='typename'/}" alt="{dede:field name='typename'/}" width="100%" />
+</a>
+</div>
+</div>
+<!--导图结束-->
+
+<div class="contentao">
+<!--左边导航栏开始-->
+ {dede:include filename="leftx.htm"/}
+<!--左边导航栏结束-->
+
+
+<!--右边内容开始-->
+<div class="clers">
+<!--右边内容导航开始-->
+<div class="clers_a">
+<div class="clers_aa">
+    <span class="aa">公司新闻</span>
+</div>
+<div class="clers_ab">
+     <span class="bb">当前位置:{dede:field name='position'/}</span>
+</div>
+</div>
+<!--右边内容导航结束-->
+<hr/>
+
+{dede:sql sql='Select content from dede_arctype where id=2'}
+<div class="clers_b">
+<div class="clers_ba">
+<h1 style="padding-top: 7px; text-align: center;">常德市福寿颐康园</h1>
+</div>
+<div class="clers_bb">
+<span>作者：常德市福寿颐康园</span>
+</div>
+<div class="clers_bc">
+<p>[field:content/]</p>
+</div>
+</div>
+{/dede:sql}
+
+
+<!-- 图片 -->
+<div class="clers_c">
+
+
+<div class="clers_ca">
+<img src="{dede:global.cfg_templets_skin/}/images/rr.jpg" alt="福寿"/>
+ </div>
+
+
+<div class="clers_cb">
+<img src="{dede:global.cfg_templets_skin/}/images/11.png" alt="福寿"/>
+ </div>
+
+
+</div>
+<!-- 图片 -->
+
+</div>
+</div>
+<!--右边内容结束-->
+
+
+
+{dede:include filename="footer.htm"/}
+</body>
+</html>

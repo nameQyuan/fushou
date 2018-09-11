@@ -1,0 +1,32 @@
+<div class="leftr">
+  <div class="leib2">
+    <div class="tit"> {dede:field.typename/}</div>
+    <div class="nr">
+      <div>
+
+        {dede:channel type='son' noself='yes'}
+<h5 class='erji' sid='0001,0008,0009'>  <a class="ershow" href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a> </h5>
+{/dede:channel}
+
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+
+    $(".sj").hide();
+
+    $(".erji").hover(function () {
+
+        $(this).next(".sj").toggle(200).siblings(".sj").hide(200);
+
+    }).css("cursor", "pointer");
+
+</script>
+  <script type="text/javascript">
+
+    productSelectCurrentPosition("0001,0005,0006");
+
+</script>
+</div>
+

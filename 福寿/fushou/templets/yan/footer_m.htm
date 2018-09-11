@@ -1,0 +1,35 @@
+﻿<div id="footer" class="clearfix">
+  <div class="copy">
+    <p>服务热线：{dede:global.cfg_sj/}</p>
+    <p>{dede:global.cfg_beian/}</p>
+    <p>技术支持：<a href="" target="_blank" style="color: #fff;">天维网络</a></p>
+  </div>
+</div>
+</div>
+<script>
+$(document).ready(function(){
+function wSize(){
+	var heights = $(window).height();
+	var heighttop=$(".foc").height();
+	var focHeights = $("#header").height();
+	var mainboxheight=heights - heighttop - focHeights ;
+	//var widths = $(window).width();
+	//var left = heights ;//heights - ($("#header").height()+71);
+	//$(".mianbox").height(left);
+	$("#footer").css('marginBottom', heighttop);
+	//$(".cont").css('minHeight', mainboxheight);
+
+
+}
+wSize();
+/*
+if($(window).height() > 810){
+	var heights = $(window).height();
+	var mgtp = (heights - 810)/2;
+	$(".mianbox").height(810);
+	$(".mianbox").css('marginTop', mgtp);
+	};
+*/
+
+})
+</script>

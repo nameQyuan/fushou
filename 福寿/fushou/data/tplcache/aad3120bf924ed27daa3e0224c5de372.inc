@@ -1,0 +1,1 @@
+<li class="fcon"><img src="[field:imgsrc/]" width="800" height="440" /></li>

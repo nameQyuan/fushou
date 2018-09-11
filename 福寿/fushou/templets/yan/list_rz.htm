@@ -1,0 +1,176 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field name='typename'/}-{dede:global.cfg_webname/}</title>
+
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+
+<meta name="description" content="{dede:global.cfg_description/}" />
+
+<link href="{dede:global.cfg_templets_skin/}/style/resetcommon.css" rel="stylesheet" type="text/css" />
+
+<link href="{dede:global.cfg_templets_skin/}/style/Style.css" rel="stylesheet" type="text/css" />
+
+<link href="{dede:global.cfg_templets_skin/}/style/footer.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/iconfont.css">
+
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/NSW_JCIA.js"></script></head>
+
+<body>
+<!--Header:Start-->
+<!--头部开始-->
+
+{dede:include filename="head.htm"/}
+
+    <!--Header:End-->
+
+    <!--Content:Start-->
+
+<div class="topadcs">
+    <a href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+<img src="{dede:global.cfg_templets_skin/}/images/001.png" title="{dede:field name='typename'/}" alt="{dede:field name='typename'/}" width="100%" /></a>
+</div>
+
+<div class="contentao">
+ <div class="rz_img">
+
+    <style>
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding-left:370px;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)}
+    to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<img id="myImg" src="{dede:global.cfg_templets_skin/}/images/rzlc.jpg" alt="Northern Lights, Norway" width="35%" />
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// 获取模态窗口
+var modal = document.getElementById('myModal');
+
+// 获取图片模态框，alt 属性作为图片弹出中文本描述
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// 获取 <span> 元素，设置关闭模态框按钮
+var span = document.getElementsByClassName("close")[0];
+
+// 点击 <span> 元素上的 (x), 关闭模态框
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
+
+
+ </div>
+</div>
+
+
+{dede:include filename="footer.htm"/}
+<!-- 返回顶部 -->
+</body>
+
+</html>
+

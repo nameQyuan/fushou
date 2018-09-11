@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>{dede:field name='typename'/}-{dede:global.cfg_webname/}</title>
+
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+
+<meta name="description" content="{dede:global.cfg_description/}" />
+
+    <script src="{dede:global.cfg_templets_skin/}/style/MobileRewrite.js" type="text/javascript"></script>
+    <link href="{dede:global.cfg_templets_skin/}/style/resetcommon.css" rel="stylesheet" type="text/css" />
+    <link href="{dede:global.cfg_templets_skin/}/style/Style.css" rel="stylesheet" type="text/css" />
+    <link href="{dede:global.cfg_templets_skin/}/style/footer.css" rel="stylesheet" type="text/css" />
+        <link href="{dede:global.cfg_templets_skin/}/style/iconfont.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/NSW_Details.js"></script>
+
+    <meta name="baidu-site-verification" content="FYOKc8NLrt" />
+
+</head>
+<body>
+        <!--头部开始-->
+        {dede:include filename="head.htm"/}
+        <!--头部结束-->
+
+        <script type="text/javascript">
+
+                muneCur2();
+
+               initCommonHeader();
+
+       </script>
+
+<!--导图开始-->
+    <div class="topadcs">
+    <a href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+  <img src="{dede:global.cfg_templets_skin/}/images/002.png" title="{dede:field name='typename'/}" alt="{dede:field name='typename'/}" width="100%" />
+  </a>
+   </div>
+
+<div class="contentao">
+
+   <div class="zyz_content">
+            <div class="zyz_left">
+                <h1>志愿者</h1>
+                <div class="zyz_left_tab_cd">
+                    <span>志愿者风采</span>
+                    <span class="zyz_left_hov">志愿者申请</span>
+                    <span>团队申请</span>
+                </div>
+            </div>
+
+
+
+
+            <div class="zyz_right">
+                <div class="zyz_right_list">
+                    <div class="zyz_right_top">
+                        <h1>志愿者风采</h1>
+                        <p>当前位置&nbsp;:&nbsp;<span>联系我们></span><span>志愿者风采></span></p>
+                    </div>
+                    <div class="zyz_right_mune">
+                 {dede:list pagesize='10'  titlelen='200'   typeid ='86'}
+                      <dl class="dl_42">
+                      <dt><a title="[field:title/]" href="[field:arcurl/]" target="_blank">
+                    <img src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" /></a></dt>
+                        <dd>
+                    <h2 style="font-size:16px;"><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></h2>
+                        <q>[field:pubdate function="GetDateMK(@me)"/]</q>
+                        <p>[field:description function="cn_substr(@me,200)"/]...</p>
+                        </dd>
+                            </dl>
+                            <div class="clear">
+                            </div>
+                  {/dede:list}
+
+                </div>
+                </div>
+
+
+                <div class="zyz_right_list">
+                    <div class="zyz_right_top">
+                        <h1>志愿者申请</h1>
+                        <p>当前位置&nbsp;:&nbsp;<a href="#">联系我们></a><a href="#">志愿者申请></a></p>
+                    </div>
+                    <div class="zyz_right_mune">
+                        <div class="zyz_right_mune_content">
+                            <form action="">
+                                <p>
+                                    <label>姓名</label>
+                                    <input type="text">
+                                    <span>*</span>
+                                </p>
+                                <p style="vertical-align: middle;">
+                                    <label>性别</label>
+                                    <input style="height:12px;width:15px;margin: 3px 0 0 0" type="radio" checked name="sex"
+                                        id=""><i>男</i>
+                                    <input style="height:12px;width:15px;margin: 3px 0 0 0" type="radio" name="sex" id=""><i>女</i>
+                                    <span style="margin-left: 5px;">*</span>
+                                </p>
+                                <p>
+                                    <label>区(市)县</label>
+                                    <select name="" id="">
+                                        <option value="">锦江区</option>
+                                        <option value=""></option>
+                                    </select>
+                                    <label style="width:40px;">街道</label>
+                                    <select name="" id="">
+                                        <option value="">成龙路街道</option>
+                                        <option value=""></option>
+                                    </select>
+                                    <span>*</span>
+                                </p>
+                                <p>
+                                    <label>社区</label>
+                                    <select name="" id="">
+                                        <option value="">花香苑社区</option>
+                                        <option value=""></option>
+                                    </select>
+                                    <span>*</span>
+                                </p>
+                                <p>
+                                    <label>最高学历</label>
+                                    <input type="text">
+                                    <span>*</span>
+                                </p>
+                                <p>
+                                    <label>民族</label>
+                                    <input type="text">
+                                    <span>*</span>
+                                </p>
+                                <p>
+                                    <label>身份证</label>
+                                    <input type="text">
+                                    <span>*</span>
+                                </p>
+                                <p>
+                                    <label>政治面貌</label>
+                                    <input type="text">
+                                    <span>*</span>
+                                </p>
+                                <p>
+                                    <label>职业</label>
+                                    <input type="text">
+                                    <span>*</span>
+                                </p>
+                                <p>
+                                    <label>擅长语言</label>
+                                    <input type="text">
+                                    <span>* 可多选</span>
+                                </p>
+                                <p>
+                                    <label>参与服务的时间</label>
+                                    <input type="text">
+                                    <span>*</span>
+                                </p>
+                                <p>
+                                    <label>志愿者服务意向</label>
+                                    <input type="text">
+                                    <span>* 可多选</span>
+                                </p>
+                                <p>
+                                    <label>知识技能</label>
+                                    <input type="text">
+                                    <span>* 可多选</span>
+                                </p>
+                                <div class="zyz_right_mune_content_zs">
+                                    <p>
+                                        1.注释(*)的数据项为必填项.
+                                    </p>
+                                    <p>
+                                        2.何种语言,志愿者服务意向,知识技能此三项可进行多项选择.
+                                    </p>
+                                </div>
+                                <button>提交</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="zyz_right_list">
+                    <div class="zyz_right_top">
+                        <h1>团队风采</h1>
+                        <p>当前位置&nbsp;:&nbsp;<a href="#">联系我们></a><a href="#">团队风采></a></p>
+                    </div>
+                    <div class="zyz_right_mune">
+                        <div class="zyz_right_mune_content">
+                            <form action="">
+                                <p>
+                                    <label>团队名称</label>
+                                    <input type="text">
+                                    <span>*</span>
+                                </p>
+
+                                <p>
+                                    <label>区(市)县</label>
+                                    <select name="" id="">
+                                        <option value="">锦江区</option>
+                                        <option value=""></option>
+                                    </select>
+                                    <label style="width:40px;">街道</label>
+                                    <select name="" id="">
+                                        <option value="">成龙路街道</option>
+                                        <option value=""></option>
+                                    </select>
+                                    <span>*</span>
+                                </p>
+                                <p>
+                                    <label>社区</label>
+                                    <select name="" id="">
+                                        <option value="">花香苑社区</option>
+                                        <option value=""></option>
+                                    </select>
+                                    <span>*</span>
+                                </p>
+                                <p>
+                                    <label>人数</label>
+                                    <input type="text">
+                                    <span>*</span>
+                                </p>
+                                <p>
+                                    <label>联系电话</label>
+                                    <input type="text">
+                                    <span>*</span>
+                                </p>
+
+                                <p>
+                                    <label>参与服务的时间</label>
+                                    <input type="text">
+                                    <span>*</span>
+                                </p>
+                                <p>
+                                    <label>志愿者服务意向</label>
+                                    <input type="text">
+                                    <span>* 可多选</span>
+                                </p>
+                                <p>
+                                    <label>知识技能</label>
+                                    <input type="text">
+                                    <span>* 可多选</span>
+                                </p>
+                                <div class="zyz_right_mune_content_zs">
+                                    <p>
+                                        1.注释(*)的数据项为必填项.
+                                    </p>
+                                    <p>
+                                        2.何种语言,志愿者服务意向,知识技能此三项可进行多项选择.
+                                    </p>
+                                </div>
+                                <button>提交</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- 图片 -->
+
+</div>
+<script>
+
+        $(function () {
+            $('.zyz_left_tab_cd').children('span').on('click', function () {
+                var indexTab = $(this).index();
+                $(this).addClass('zyz_left_hov').siblings('span').removeClass('zyz_left_hov');
+                $('.zyz_right .zyz_right_list ').eq(indexTab).show().siblings('.zyz_right_list').hide();
+            })
+        })
+    </script>
+
+
+
+
+
+
+
+<!--底部-->
+
+{dede:include filename="footer.htm"/}
+
+
+
+</body>
+</html>
+
+

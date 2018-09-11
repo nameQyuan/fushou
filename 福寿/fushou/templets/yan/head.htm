@@ -1,0 +1,92 @@
+
+<div  class='top'>
+ <div class="header">
+    <div class="h_con clearfix">
+      <div class="h-logo clearfix">
+        <h1>
+          <a href="/" title="福寿">
+            <img src="{dede:global.cfg_templets_skin/}/images/logo.png" alt="福寿"title="福寿"  />
+          </a>
+      </h1>
+         </div>
+      <div class="h-pho clearfix">
+        <img src="{dede:global.cfg_templets_skin/}/images/logo1.png" alt="福寿联系方式"title="福寿联系方式" />
+      </div>
+  </div>
+</div>
+
+
+<div class="top_nav">
+<div class="nav-bar">
+      <div class="nav-bg">
+        <div class="nav-top">
+          <div class="nav-content-menu">
+          <div class="nav-content">
+            <ul class="nav-content-box">
+      {dede:channel type='top' row='10' currentstyle="<li><a href='~typelink~' class='active'>~typename~</a><span></li>"}
+        <li><span><a href='[field:typelink/]'>[field:typename/]</a><span></li>
+         {/dede:channel}
+
+  <li class="users">
+        <ul>
+        <span><a href="javascript:void(0)">园区风采</a></span>
+         {dede:channelartlist row='20' typeid='107,108,109,110'}
+        <li><a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a></li>
+       {/dede:channelartlist}
+     </ul>
+     </li>
+    <li class="userss">
+        <ul>
+        <span><a href="javascript:void(0)">园区新闻</a></span>
+         {dede:channelartlist row='20' typeid='56,57'}
+        <li><a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a></li>
+       {/dede:channelartlist}
+     </ul>
+     </li>
+          <li class="cooperations">
+          <ul>
+             <span><a href="javascript:void(0)">园区环境</a></span>
+        {dede:channelartlist row='7' typeid='89,90,91,92'}
+     <li><a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a></li>
+       {/dede:channelartlist}
+      </ul>
+      </li>
+
+        <li class="usera">
+        <ul>
+        <span><a href="javascript:void(0)">中医院</a></span>
+         {dede:channelartlist row='20' typeid='93,94,95'}
+        <li><a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a></li>
+       {/dede:channelartlist}
+     </ul>
+
+     </li>
+
+     <li class="cooperationaa">
+          <ul>
+             <span><a href="javascript:void(0)">护理</a></span>
+        {dede:channelartlist row='7' typeid='96,97,98,99,100,101,102'}
+     <li><a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a></li>
+       {/dede:channelartlist}
+      </ul>
+      </li>
+
+        <li class="useraa">
+        <ul>
+        <span><a href="javascript:void(0)">入住流程</a></span>
+         {dede:channelartlist row='20' typeid='76,77,78,79,80'}
+        <li><a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a></li>
+       {/dede:channelartlist}
+     </ul>
+     </li>
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>

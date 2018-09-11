@@ -1,0 +1,209 @@
+<!DOCTYPE>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field name='typename'/}-{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/resetcommon.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/style/Style.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/style/footer.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/iconfont.css">
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/NSW_JCIA.js"></script>
+</head>
+<body>
+
+<!--新闻动态栏目 -->
+
+
+<!--头部开始-->
+{dede:include filename="head.htm"/}
+<!--头部结束-->
+
+<script type="text/javascript">
+
+    muneCur2();
+
+    initCommonHeader();
+
+    var MARK = "product";
+
+    if (MARK == "") { MARK = "index"; } else if (MARK != "index") { muneCur2(); }
+
+</script>
+
+<!--导图开始-->
+
+<div class="topadcssa">
+<a href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+<img src="{dede:global.cfg_templets_skin/}/images/0002.png" title="{dede:field name='typename'/}" alt="{dede:field name='typename'/}" width="100%"/>
+</a>
+</div>
+
+<div class="contentao">
+<div class="yyzx_center">
+            <div class="yyzx_center_tel">
+                <h1>
+                    <i class="iconfont">&#xe626;</i>中医院
+                </h1>
+                <p id="yyzx_center_tab">
+                    <span class="yyzx_center_tel_tab">医院简介</span>
+                    <span>医师资质</span>
+                    <span>设备展示</span>
+                </p>
+            </div>
+            <div class="yyzx_center_img">
+                <div class="yyzx_center_img_list">
+                    <ul>
+
+                        <li>
+                             {dede:arclist row="3" imgwidth="100" imgheight="100" type="image"  §orderby='id'  typeid='93' }
+                            <p>
+                                 <a target="_blank" href="[field:arcurl /]" title="[field:fulltitle/]">
+                                    [field:image/]
+                                    <span>[field:title /]</span>
+                                 </a>
+                            </p>
+                             {/dede:arclist}
+                        </li>
+
+
+
+                        <li>
+                            {dede:arclist row="3" imgwidth="100" imgheight="100" type="image"  typeid='94'}
+                                <p>
+                                    <a target="_blank" href="[field:arcurl /]" title="[field:fulltitle/]">
+                                    [field:image/]
+                                    <span>[field:title /]</span>
+                                     </a>
+                                </p>
+                            {/dede:arclist}
+                        </li>
+
+
+                        <li>
+                             {dede:arclist row="3" imgwidth="100" imgheight="100" type="image"  typeid='95'}
+                            <p>
+                                 <a target="_blank" href="[field:arcurl /]" title="[field:fulltitle/]">
+                                    [field:image/]
+                                    <span>[field:title /]</span>
+                                 </a>
+                            </p>
+                             {/dede:arclist}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="yyzx_center_img_ul">
+                <ul>
+                    <li class="yyzx_center_img_ul_width"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="yyzx_zhanshi">
+            <div class="yyzx_center_tel" style="padding-bottom:5px;">
+                <h1 style="margin:0;">
+                    <i class="iconfont">&#xe64a;</i>护理
+                </h1>
+            </div>
+            <div class="yyzx_zhanshi_img">
+                <div class="yyzx_zhanshi_img_list">
+                	{dede:type typeid='96'}
+                    <a href="[field:typelink/]">
+                        <img src="/templets/yan/images/ins/10.png" alt="">
+                        <span>护理团队</span>
+                    </a>
+                     {/dede:type}
+                </div>
+
+                <div class="yyzx_zhanshi_img_list">
+                	 {dede:type typeid='97'}
+                    <a href="[field:typelink/]">
+                        <img src="/templets/yan/images/ins/5.png" alt="">
+                        <span>护理等级</span>
+                    </a>
+                       {/dede:type}
+                </div>
+
+                <div class="yyzx_zhanshi_img_list">
+                	{dede:type typeid='99'}
+                    <a href="[field:typelink/]">
+                        <img src="/templets/yan/images/ins/6.png" alt="">
+                        <span>护理辅助设施</span>
+                    </a>
+                     {/dede:type}
+                </div>
+
+
+                <div class="yyzx_zhanshi_img_list">
+                	{dede:type typeid='100'}
+                    <a href="[field:typelink/]">
+                        <img src="/templets/yan/images/ins/7.png" alt="">
+                        <span>健康管理</span>
+                    </a>
+                    {/dede:type}
+                </div>
+
+                <div class="yyzx_zhanshi_img_list">
+                	 {dede:type typeid='101'}
+                    <a href="[field:typelink/]">
+                        <img src="/templets/yan/images/ins/8.png" alt="">
+                        <span>营养膳食</span>
+                    </a>
+                      {/dede:type}
+                </div>
+
+                <div class="yyzx_zhanshi_img_list">
+                	 {dede:type typeid='102'}
+                    <a href="[field:typelink/]">
+                        <img src="/templets/yan/images/ins/9.png" alt="">
+                        <span>安全保障</span>
+                    </a>
+                     {/dede:type}
+                </div>
+
+                <div class="yyzx_zhanshi_img_list">
+                	 {dede:type typeid='98'}
+                    <a href="[field:typelink/]">
+                        <img src="/templets/yan/images/ins/10.png" alt="">
+                        <span>护理特色</span>
+                    </a>
+                       {/dede:type}
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            var yyzx_center_tel_tab = 'yyzx_center_tel_tab';
+            var yyzx_center_img_ul_ul_li = $('.yyzx_center_img_ul ul li');
+            var yyzx_center_img_ul_width = 'yyzx_center_img_ul_width'
+            $('#yyzx_center_tab span').on('click', function () {
+                var index = $(this);
+                tab(index);
+            })
+            yyzx_center_img_ul_ul_li.on('click',function(){
+                var index = $(this);
+                tab(index);
+            })
+            function tab(index){
+                // 获取点击下标
+                var indexYYZX = $(index).index();
+                //tab栏加背景颜色
+                $('#yyzx_center_tab span').eq(indexYYZX).addClass(yyzx_center_tel_tab).siblings('span').removeClass(yyzx_center_tel_tab);
+                //图片切换
+                $('.yyzx_center_img_list ul li').eq(indexYYZX).stop().fadeIn(500).siblings().stop().fadeOut();
+                // 点加宽度
+                $(yyzx_center_img_ul_ul_li).eq(indexYYZX).addClass(yyzx_center_img_ul_width).siblings(yyzx_center_img_ul_ul_li).removeClass(yyzx_center_img_ul_width);
+            }
+        })
+    </script>
+
+
+ {dede:include filename="footer.htm"/}
+</body>
+</html>

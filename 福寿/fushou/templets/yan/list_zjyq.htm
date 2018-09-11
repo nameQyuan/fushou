@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>{dede:field name='typename'/}-{dede:global.cfg_webname/}</title>
+<meta name="baidu-site-verification" content="FYOKc8NLrt" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/resetcommon.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/style/Style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/rest.css">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/footer.css">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/iconfont.css">
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.11.1.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/style/MobileRewrite.js" type="text/javascript"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/NSW_Details.js"></script>
+</head>
+<body>
+  <script type="text/javascript">
+if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/index.html";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}
+</script>
+{dede:include filename="head.htm"/}
+
+<script type="text/javascript">
+
+      muneCur2();
+
+      initCommonHeader();
+</script>
+
+
+<div class="topadcs">
+<a href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+<img src="{dede:global.cfg_templets_skin/}/images/12.png" title="{dede:field name='typename'/}" alt="{dede:field name='typename'/}" />
+</a>
+</div>
+   <div class="contentao">
+
+ <div class="zjyq_late">
+ {dede:include filename="leftx.htm"/}
+
+ </div>
+
+ <div class="zjyq_ritea">
+  <div class="zjyq_top">
+ <div class="plc">
+  <span style="float:left;">{dede:field name='typename'/}</span>
+   <span>{dede:field name='position'/}</span>
+</div>
+  </div>
+  <div class="hqhj_img_list">
+     {dede:list pagesize ='6'}
+<div class="hqhj_name">
+  <div class="hqhj_img">
+    <a target="_blank" href="[field:arcurl /]" title="[field:fulltitle/]">
+  <img src="[field:picname/]" alt="[field:title/]" >
+    </a>
+    <div class="hqhj_desc"><a href="[field:arcurl /]">[field:title /]</a></div>
+  </div>
+</div>
+ {/dede:list}
+  </div>
+ </div>
+<div class="pagess">
+        <ul>
+         {dede:pagelist listitem="index,end,pageno" listsize="2"/}
+ </ul>
+  </div>
+
+
+
+
+  </div>
+
+<!--content:end-->
+
+<script type="text/javascript">
+
+    helpLoad(); initCommonHeaderKeywords(MARK);
+
+</script>
+
+<!--footer:start-->
+{dede:include filename="footer.htm"/}
+</body>
+</html>
+

@@ -1,0 +1,3 @@
+<p class="info">
+     [field:content function='cn_substr(html2text(@me),800)'/]...
+    </p>

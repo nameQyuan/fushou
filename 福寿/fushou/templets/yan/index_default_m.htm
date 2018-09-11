@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="telephone=no" name="format-detection">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<script type="text/javascript" language="javascript" src="/m/skin/js/jq.js"></script>
+<script type="text/javascript" language="javascript" src="/m/skin/js/js.js"></script>
+<!--[if lt IE 9]><script src="/m/skin/js/html5.js"></script><![endif]-->
+<link href="/m/skin/css/css.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+{dede:include filename="header_m.htm"/}
+<div class="mainboxbg"></div>
+<div class="mainbox">
+<!--header-->
+<div id="header" class="clearfix" style="position:relative;">
+  <div class="back"><a title="返回" href="javascript:history.back();"><img src="/m/skin/images/back.jpg" alt="分类"></a></div>
+  <div class="cpaut">{dede:field name='typename'/}</div>
+  <div class="flbox"><img src="/m/skin/images/fl.jpg" alt="分类"></div>
+</div>
+<div class="mainbox">
+  <div class="cont clearfix">
+    <div class="cptt">
+        <select name="select1" style="width:100%; height:30px;font-size:16px; color:#007d39; border:1px solid #007d39;" onChange="javascript:location=this.options[this.selectedIndex].value" >
+        <option value="#">{dede:field name='typename'/}</option>
+        {dede:channel type='son'  row='10' currentstyle="
+        <li>
+         <a href='list.php?tid=~id~' ~rel~><span>~typename~</span></a>
+        </li>
+        "}
+        <option value="list.php?tid=[field:id/]"> [field:typename/] </option>
+         {/dede:channel}
+      </select>
+
+    </div>
+    <div>{dede:field.content/}</div>
+    <ul class="newslist clearfix">
+      {dede:list pagesize='9' titlelen='50'}
+      <li> <a href="view.php?aid=[field:id/]" title="[field:title/]">[field:title/]<span class="fr">[field:pubdate function="MyDate('m-d',@me)"/] </span></a> </li>
+      {/dede:list}
+      <!--list.var5-->
+    </ul>
+    <div style=" clear:both"></div>
+    <div class="pageListNav">
+      <ul>
+        {dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 底部 -->
+<!--footer-->
+
+<!--footer-->
+{dede:include filename="footer_m.htm"/}
+</body>
+</html>

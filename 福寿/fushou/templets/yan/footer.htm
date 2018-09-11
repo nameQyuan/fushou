@@ -1,0 +1,62 @@
+
+    <div class="footer_index">
+        <div class="footer_content">
+            <div class="footer_content_left">
+                <h3>预约入住常德市福寿颐康园</h3>
+                <form action="">
+                    <div class="footer_content_left_inp">
+                        <input type="text" placeholder="您的尊称&nbsp;Name">
+                        <i class="iconfont">&#xe605;</i>
+                    </div>
+                    <div class="footer_content_left_inp">
+                        <input type="text" placeholder="您的电话&nbsp;Phone">
+                        <i class="iconfont">&#xe72f;</i>
+                    </div>
+                    <div class="footer_content_left_btn">
+                        <a href="#">预约订房</a>
+                        <button>立即提交</button>
+                    </div>
+                </form>
+            </div>
+            <div class="footer_content_middle">
+                <h3>{dede:global.cfg_mc/}&nbsp;Contact&nbsp;us</h3>
+                <ol>
+                    <li>
+                        <i class="iconfont">&#xe62e;</i>
+                        {dede:global.cfg_dz/}
+                    </li>
+                    <li>
+                        <i class="iconfont">&#xe604;</i>
+                        {dede:global.cfg_sj/}
+                    </li>
+                    <li>
+                        <i class="iconfont">&#xe72f;</i>
+                        电话：{dede:global.cfg_sj/}
+                    </li>
+                    <li>
+                        <i class="iconfont">&#xe6af;</i>
+                        邮箱：{dede:global.cfg_yx/}
+                    </li>
+                    <li>
+                        <i class="iconfont">&#xe648;</i>
+                        QQ：{dede:global.cfg_qq/}
+                    </li>
+                </ol>
+            </div>
+            <div class="footer_content_right">
+               <img src="{dede:global.cfg_templets_skin/}/images/erweima.jpg" alt="">
+                <p>{dede:global.cfg_mc/}</p>
+            </div>
+        </div>
+        <div class="footer_copy">
+            <p>{dede:global.cfg_beian/}；技术支持：天维网络；</p>
+        </div>
+    </div>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.11.1.min.js"></script>
+    <script>
+        $(function () {
+            $('.footer_content_left_inp').on('click', function () {
+                $(this).find('input').focus();
+            })
+        })
+    </script>
